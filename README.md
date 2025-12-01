@@ -125,7 +125,7 @@ cd backend
 npm install
 
 3. Create `.env` file (copy from `.env.example`)
-MONGODB_URI=mongodb+srv://bhavishkunder:Kouser143@beachproject.d8nuu.mongodb.net/leave-management
+MONGODB_URI=mongo_atlas_url
 JWT_SECRET=your_jwt_secret_key
 PORT=5000
 
