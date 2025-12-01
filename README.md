@@ -43,66 +43,76 @@ A leave management system where employees can apply for leaves and managers can 
 - **JWT** - Authentication
 - **bcryptjs** - Password hashing
 
-## Project Structure
-
-\`\`\`
+## 📁 Project Structure
+```
 leave-management-system/
-├── frontend/                          # React frontend
+│
+├── frontend/                              # React frontend application
+│   ├── public/
+│   │   └── index.html                    # HTML template
+│   │
 │   ├── src/
-│   │   ├── pages/                    # Page components
-│   │   │   ├── Login.jsx             # Login page
-│   │   │   ├── Register.jsx          # Registration page
-│   │   │   ├── EmployeeDashboard.jsx # Employee dashboard
-│   │   │   ├── ManagerDashboard.jsx  # Manager dashboard
-│   │   │   ├── ApplyLeave.jsx        # Apply leave form
-│   │   │   ├── MyRequests.jsx        # View my requests
-│   │   │   ├── PendingRequests.jsx   # Manager - pending requests
-│   │   │   ├── AllRequests.jsx       # Manager - all requests
-│   │   │   └── Profile.jsx           # User profile
-│   │   ├── components/               # Reusable components
-│   │   │   └── Layout.jsx            # Navigation layout
-│   │   ├── redux/                    # Redux state management
-│   │   │   ├── store.js              # Redux store
-│   │   │   └── slices/               # Redux slices
-│   │   │       ├── authSlice.js      # Auth state
-│   │   │       ├── leaveSlice.js     # Leave state
-│   │   │       └── dashboardSlice.js # Dashboard state
-│   │   ├── styles/                   # CSS styles
-│   │   │   ├── Auth.css              # Login/Register styles
-│   │   │   ├── Dashboard.css         # Dashboard styles
-│   │   │   ├── Form.css              # Form styles
-│   │   │   ├── Layout.css            # Navigation styles
-│   │   │   ├── Profile.css           # Profile styles
-│   │   │   └── Requests.css          # Requests styles
-│   │   ├── App.js                    # Main app component
-│   │   └── index.js                  # App entry point
-│   ├── public/                       # Static files
-│   │   └── index.html                # HTML template
-│   ├── package.json                  # Frontend dependencies
-│   └── .env                          # Frontend environment variables
+│   │   ├── pages/                        # Page components
+│   │   │   ├── Login.jsx                 # Login page
+│   │   │   ├── Register.jsx              # Registration page
+│   │   │   ├── EmployeeDashboard.jsx     # Employee dashboard
+│   │   │   ├── ManagerDashboard.jsx      # Manager dashboard
+│   │   │   ├── ApplyLeave.jsx            # Apply leave form
+│   │   │   ├── MyRequests.jsx            # View my requests
+│   │   │   ├── PendingRequests.jsx       # Manager - pending requests
+│   │   │   ├── AllRequests.jsx           # Manager - all requests
+│   │   │   └── Profile.jsx               # User profile
+│   │   │
+│   │   ├── components/                   # Reusable components
+│   │   │   └── Layout.jsx                # Navigation layout
+│   │   │
+│   │   ├── redux/                        # Redux state management
+│   │   │   ├── store.js                  # Redux store
+│   │   │   └── slices/                   # Redux slices
+│   │   │       ├── authSlice.js          # Auth state
+│   │   │       ├── leaveSlice.js         # Leave state
+│   │   │       └── dashboardSlice.js     # Dashboard state
+│   │   │
+│   │   ├── styles/                       # CSS styles
+│   │   │   ├── Auth.css                  # Login/Register styles
+│   │   │   ├── Dashboard.css             # Dashboard styles
+│   │   │   ├── Form.css                  # Form styles
+│   │   │   ├── Layout.css                # Navigation styles
+│   │   │   ├── Profile.css               # Profile styles
+│   │   │   └── Requests.css              # Requests styles
+│   │   │
+│   │   ├── App.js                        # Main app component
+│   │   └── index.js                      # App entry point
+│   │
+│   ├── package.json                      # Frontend dependencies
+│   └── .env                              # Frontend environment variables
 │
-├── backend/                           # Node.js backend
-│   ├── models/                       # Database models
-│   │   ├── User.js                   # User model
-│   │   └── LeaveRequest.js           # Leave request model
-│   ├── controllers/                  # Business logic
-│   │   ├── authController.js         # Authentication logic
-│   │   ├── leaveController.js        # Leave management logic
-│   │   └── dashboardController.js    # Dashboard statistics
-│   ├── routes/                       # API routes
-│   │   ├── authRoutes.js             # Auth endpoints
-│   │   ├── leaveRoutes.js            # Leave endpoints
-│   │   └── dashboardRoutes.js        # Dashboard endpoints
-│   ├── middleware/                   # Custom middleware
-│   │   └── authMiddleware.js         # JWT verification
-│   ├── server.js                     # Express server
-│   ├── package.json                  # Backend dependencies
-│   └── .env                          # Backend environment variables
+├── backend/                               # Node.js backend application
+│   ├── models/                           # Database models
+│   │   ├── User.js                       # User model
+│   │   └── LeaveRequest.js               # Leave request model
+│   │
+│   ├── controllers/                      # Business logic
+│   │   ├── authController.js             # Authentication logic
+│   │   ├── leaveController.js            # Leave management logic
+│   │   └── dashboardController.js        # Dashboard statistics
+│   │
+│   ├── routes/                           # API routes
+│   │   ├── authRoutes.js                 # Auth endpoints
+│   │   ├── leaveRoutes.js                # Leave endpoints
+│   │   └── dashboardRoutes.js            # Dashboard endpoints
+│   │
+│   ├── middleware/                       # Custom middleware
+│   │   └── authMiddleware.js             # JWT verification
+│   │
+│   ├── server.js                         # Express server
+│   ├── package.json                      # Backend dependencies
+│   └── .env                              # Backend environment variables
 │
-└── Documentation files
-    ├── README.md                     # This file
-    ├── .env.example                  # Example env file
-    └── DOCUMENTATION.md              # Detailed documentation
+├── README.md                              # Project documentation
+├── .env.example                          # Example environment file
+└── DOCUMENTATION.md                      # Detailed documentation
+```
 
 
 ## Installation & Setup
